@@ -1,0 +1,9 @@
+/***************************************************************
+Internet Explorer <=6 CSS
+http://www.madscitech.com
+***************************************************************/
+#home-link{background:url(../images/ie/logo.jpg);}
+#footer-logo-link{background:url(../images/ie/logo-square.jpg);}
+a.hdr-rss{background:url(../images/ie/rss.jpg) no-repeat scroll right center;}
+#articles{min-height:650px;height:auto !important;height:650px;}
+#onpremise-info, #remote-info, #online-info{padding:10px 0 0;} 

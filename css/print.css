@@ -1,0 +1,31 @@
+/*
+Mad Scientist Technologies
+Print CSS
+Author: Chris Holbrook
+URL: MadSciTech.com
+Created: November 2009
+Version: 0.1 (Alpha)
+*/
+body { font-family:Arial, Helvetica, sans-serif;background: none;color: black;}
+/* Logo */
+#home-link{display:block;font-size:20pt;font-weight:bold;}
+/* Header Stuff to Hide */	
+#header-sitecontrols,#site-search,#nav,#FMA,#aside,#footer-wrapper,.nocomments,#respond,.comment-edit-link,.comment-reply-link{display:none;}
+/* Post Adjustments */
+h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif;}
+h1{font-size:20pt;}
+h2{font-size:18pt;}
+h3{font-size:16pt;}
+h4,h5,h6{font-size:14pt;}
+/* Prints Links */
+.post-entry p a:after{content: " [" attr(href) "] ";}
+/* Misc */
+a{text-decoration:none; color:#000;}
+hr{background-color: #ccc;}
+img{display:block;margin:1em 0;}
+code{font:10pt Courier, monospace;}
+p{ font: Arial, Helvetica, sans-serif; font-size:13px;}
+/* Copyright */
+#page-wrap:after{border-top:3px #000 solid; content:"© Mad Scientist Technologies. www.madscitech.com";}
+/* Comments */
+#comments { page-break-before: always; }
