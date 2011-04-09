@@ -68,3 +68,22 @@ function excludeCatsfromFeed($query) {
 	return $query;
 }
 add_filter('pre_get_posts','excludeCatsfromFeed');
+
+// Custom Post Types - FAQs
+
+	add_action('init', 'faq_register');
+
+	function faq_register() {
+    	$args = array(
+        	'label' => __('FAQs'),
+        	'singular_label' => __('FAQ'),
+        	'public' => true,
+        	'show_ui' => true,
+        	'capability_type' => 'post',
+        	'hierarchical' => false,
+        	'rewrite' => true,
+        	'supports' => array('title', 'editor', 'thumbnail')
+        );
+
+    	register_post_type( 'FAQ' , $args );
+	}
