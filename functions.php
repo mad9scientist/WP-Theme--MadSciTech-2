@@ -75,15 +75,16 @@ add_filter('pre_get_posts','excludeCatsfromFeed');
 
 	function faq_register() {
     	$args = array(
-        	'label' => __('FAQs'),
-        	'singular_label' => __('FAQ'),
-        	'public' => true,
-        	'show_ui' => true,
-        	'capability_type' => 'post',
-        	'hierarchical' => false,
-        	'rewrite' => true,
-        	'supports' => array('title', 'editor', 'thumbnail')
+        	'label'           =>    __('FAQs'),
+        	'singular_label'  =>    __('FAQ'),
+        	'public'          =>    true,
+        	'show_ui'         =>    true,
+        	'capability_type' =>    'post',
+        	'hierarchical'    =>    false,
+        	'rewrite'         =>    array('slug' => 'faqs'), 
+        	'has_archive'     =>    true,
+        	'supports'        =>    array('title', 'editor', 'comments')
         );
 
-    	register_post_type( 'FAQ' , $args );
-	}
+    	register_post_type( 'mst_faq_post' , $args );
+	}                     

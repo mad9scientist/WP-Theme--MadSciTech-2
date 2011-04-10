@@ -15,7 +15,7 @@ get_header();
 <div id="articles">
 	<div class="article">
 		<div style="text-align:center">
-        	<h2><i>Uh Oh!</i><br />404 - Resource Not Found</h2>
+        	<h2><i>Uh Oh! We Broke Something!</i><br />404 - Resource Not Found</h2>
             <br /><br />Requested Page: <? echo $page; ?><br />
 <br />
 

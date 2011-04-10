@@ -16,7 +16,7 @@
 ?>
 
 <!-- You can start editing here. -->
-
+  
 <?php if ( have_comments() ) : ?>
 	<h3 id="comments">Comments</h3>
 
@@ -30,6 +30,7 @@
 
 	<?php if ( comments_open() ) : ?>
 		<!-- If comments are open, but there are no comments. -->
+		<h3 id="comments">Comments</h3>
 		<p>Be the first to comment on this Article</p>
         
 
