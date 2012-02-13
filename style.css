@@ -244,4 +244,63 @@ textarea{font-family:Arial, Helvetica, sans-serif;font-size:12px;}
 /* Poll Bars*/
 .wp-polls .pollbar {margin: 1px;font-size: 13px;line-height: 15px;height: 15px;background: #008cd5;border: 1px solid #008cd5;}
 
+/* Remote Support Client Download Button */
+.remote-support-btn {
+	background: #dedede;
+	background: -webkit-linear-gradient(top, #fefefe, #dedede);
+	background: -moz-linear-gradient(top, #fefefe, #dedede);
+	background: -o-linear-gradient(top, #fefefe, #dedede);
+	background: -ms-linear-gradient(top, #fefefe, #dedede);
+	background: linear-gradient(top, #fefefe, #dedede);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dedede',GradientType=0 ); /* IE6-8 */
+	border: 1px solid #dedede;
+	width: 300px;
+	height: 90px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	font: 18px/1.3em sans-serif;
+	text-shadow: 0 -1px 0 #fff;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 18px 8px 8px;
+	display: block;
+	-webkit-box-shadow: 0 0 1px #666;
+	-moz-box-shadow: 0 0 1px #666;
+	box-shadow: 0 0 1px #666;
+}
+.remote-support-btn span {
+	margin-left: 90px;
+	width: 200px;
+}
+a.remote-support-btn {
+	text-decoration: none;
+	color: #444;
+	text-shadow: 0 -1px 0 #ddd;
+}
+.remote-support-btn:before {
+	background: url(images/core-img.png) -84px -101px;
+	width: 78px;
+	height: 72px;
+	content: "";
+	position: absolute;
+	top: 8px;
+}
+.remote-support-btn:hover {
+	background: #dedede;
+	background: -webkit-linear-gradient(bottom, #fefefe, #dedede);
+	background: -moz-linear-gradient(bottom, #fefefe, #dedede);
+	background: -o-linear-gradient(bottom, #fefefe, #dedede);
+	background: -ms-linear-gradient(bottom, #fefefe, #dedede);
+	background: linear-gradient(bottom, #fefefe, #dedede);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#fefefe',GradientType=0 ); /* IE6-8 */
+	-webkit-box-shadow: 0 0 2px #000 inset;
+	-moz-box-shadow: 0 0 2px #000 inset;
+	box-shadow: 0 0 2px #000 inset;
+}
+a.remote-support-btn:hover {text-shadow: 0 1px 0 #999;}
+
 }
