@@ -57,7 +57,7 @@
       <div class="clear"></div>
     </div>  */ ?>
     
-    <div class="floatRight">
+    <div class="floatRight socialIcons">
       <a href="/google+/" titile="Join us on Google+" class="hdrSocialIco hdrIcoGoogle">Join us on Google+</a>
 	    <a href="/facebook/" title="Like us on Facebook" class="hdrSocialIco hdrIcoTwitter">Like us on Facebook</a>
 	    <a href="/twitter/" title="Follow us on Twitter" class="hdrSocialIco hdrIcoFB">Follow us on Twitter</a>

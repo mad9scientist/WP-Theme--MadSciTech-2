@@ -3,14 +3,36 @@ Mad Scientist Technologies
 Global CSS
 Author: Chris Holbrook
 URL: MadSciTech.com
-Created: November-December 2009 (Updated March 2011)
+Created: November-December 2009 (Updated Febuary 2012)
 Version: 1.3
 */
 
-/* RESET Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
-*,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0;}fieldset,img{ border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul,li{list-style:none;}caption,th{text-align:left}q:before,q:after{ content:''}strong{font-weight:bold}em { font-style:italic }a img { border:none }
+
+/* Print Styles */
+@media print {
+body { font-family:sans-serif;background:none;color: black;}
+#home-link{display:block;border-bottom:2px solid #000;}
+#home-link:after{content: ""  attr(href)""; font:12pt/1.3em sans-serif;}
+/* Header Stuff to Hide */	
+#header-sitecontrols,#site-search,#nav,#FMA,#aside,#footer-wrapper,.nocomments,#respond,.comment-edit-link,.comment-reply-link,.socialIcons,iframe,#comments, #comments ~ p, .commentlist, #respond{display:none;}
+/* Post Adjustments */
+/*h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif;}h1{font-size:20pt;}h2{font-size:18pt;}h3{font-size:16pt;}h4,h5,h6{font-size:14pt;}
+/* Prints Links */
+.post-entry p a:after{content: " [" attr(href) "] ";}
+/* Misc */
+a{text-decoration:none; color:#000;}hr{background-color: #ccc;}img{display:block;margin:1em 0;}code{font:10pt Courier, monospace;}/*p{ font: Arial, Helvetica, sans-serif; font-size:13px;}
+/* Copyright */
+/*#page-wrap:after{margin-top: 25px; border-top:3px #000 solid; content:"Mad Scientist Technologies - www.madscitech.com";}
+/* Comments */
+/*#comments { page-break-before: always; }*/
+}
+
 
 @media screen{
+
+/* RESET Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0;}fieldset,img{ border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul,li{list-style:none;}caption,th{text-align:left}q:before,q:after{ content:''}strong{font-weight:bold}em { font-style:italic }a img { border:none }
+
 body{font-family:Arial, Helvetica, sans-serif;	font-size:12px;	background:#008cd5;}
 #page-wrap{	width:1050px; margin:auto;}
 #header{background:#fff; height:130px; width:951px; margin:15px auto 0; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; border-radius:10px 10px 0 0;}
@@ -222,21 +244,4 @@ textarea{font-family:Arial, Helvetica, sans-serif;font-size:12px;}
 /* Poll Bars*/
 .wp-polls .pollbar {margin: 1px;font-size: 13px;line-height: 15px;height: 15px;background: #008cd5;border: 1px solid #008cd5;}
 
-}
-
-@media print {
-body { font-family:Arial, Helvetica, sans-serif;background: none;color: black;}
-#home-link{display:block;font-size:20pt;font-weight:bold;}
-/* Header Stuff to Hide */	
-#header-sitecontrols,#site-search,#nav,#FMA,#aside,#footer-wrapper,.nocomments,#respond,.comment-edit-link,.comment-reply-link{display:none;}
-/* Post Adjustments */
-h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif;}h1{font-size:20pt;}h2{font-size:18pt;}h3{font-size:16pt;}h4,h5,h6{font-size:14pt;}
-/* Prints Links */
-.post-entry p a:after{content: " [" attr(href) "] ";}
-/* Misc */
-a{text-decoration:none; color:#000;}hr{background-color: #ccc;}img{display:block;margin:1em 0;}code{font:10pt Courier, monospace;}p{ font: Arial, Helvetica, sans-serif; font-size:13px;}
-/* Copyright */
-#page-wrap:after{border-top:3px #000 solid; content:"© Mad Scientist Technologies. www.madscitech.com";}
-/* Comments */
-#comments { page-break-before: always; }
 }
