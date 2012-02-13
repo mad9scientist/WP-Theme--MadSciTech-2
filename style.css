@@ -36,16 +36,16 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,
 body{font-family:Arial, Helvetica, sans-serif;	font-size:12px;	background:#008cd5;}
 #page-wrap{	width:1050px; margin:auto;}
 #header{background:#fff; height:130px; width:951px; margin:15px auto 0; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; border-radius:10px 10px 0 0;}
-#home-link{display:block; text-indent:-9999px; background:url(images/core-img.png) -20px -108px no-repeat; height:90px; width:285px; font-size:24px;}
+#home-link{display:block; text-indent:-9999px; background:url(images/core-img.png) -4px 0px no-repeat; height:90px; width:285px; font-size:24px;}
 #header-content{padding:20px 20px 0px;}
 #header-sitecontrols{float:right; width:300px; height:20px; text-align:right; position:relative;}
 /*.hdr-rss{width:90px; position:absolute; right:0px;}
 a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 25px 0 0; display:block; height:22px; width:auto; text-decoration:none;}*/
 /* Header Social Icons */
 #header-content .hdrSocialIco{display:inline-block; width:24px; height:24px; text-indent:-9999px; margin:0 0 0 2px;}
-.hdrIcoFB{background: url(images/core-img.png) no-repeat -10px -54px;}
-.hdrIcoTwitter{background: url(images/core-img.png) no-repeat -10px -10px;}
-.hdrIcoGoogle{background: url(http://madscitech.com/google+/gplus.png) no-repeat;}
+.hdrIcoFB{background: url(images/core-img.png) no-repeat -231px -190px;}
+.hdrIcoTwitter{background: url(images/core-img.png) no-repeat -201px -190px;}
+.hdrIcoGoogle{background: url(images/core-img.png) no-repeat -261px -190px;}
 /* Google+ Icon from: http://www.matthodder.com/free-google-plus-icons/ GPL */
 #site-search{border:1px solid #ddd; height:35px; margin:25px 0 0; position:absolute; right:0; top:20px; width:205px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; -webkit-box-shadow:0 0 5px 0 #ccc inset; -moz-box-shadow:0 0 5px 0 #ccc inset; box-shadow:0 0 5px 0 #ccc inset; display:none;}
 #site-search-field{padding:8px 54px 0px 5px;}
@@ -90,9 +90,9 @@ a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 
  #support-opt{width:280px; overflow:auto;}
  #support-opt .onpremise, #support-opt .remote, #support-opt .online{display:block; width:80px; height:80px; margin:7px 0 7px 10px; float:left;   background:#ccc;} /* Kill background*/
  /* Icons */
- #support-opt .onpremise{background:url("images/core-img.png") no-repeat -20px -218px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
- #support-opt .remote{background:url("images/core-img.png") no-repeat -110px -218px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
- #support-opt .online{background:url("images/core-img.png") no-repeat -200px -218px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
+ #support-opt .onpremise{background:url("images/core-img.png") no-repeat 2px -100px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
+ #support-opt .remote{background:url("images/core-img.png") no-repeat -82px -99px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
+ #support-opt .online{background:url("images/core-img.png") no-repeat -173px -93px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
  .support_opt_selected,#support-opt .onpremise:focus, #support-opt .onpremise:active, #support-opt .remote:focus, #support-opt .remote:active, #support-opt .online:focus, #support-opt .online:active{-webkit-box-shadow:0 0 4px 2px #369 !important; -moz-box-shadow:0 0 4px 2px #369 !important; box-shadow:0 0 4px 2px #369 !important;}
  /* Info Box */
  #onpremise-info, #remote-info, #online-info{padding:90px 0 0; margin:5px 5px 0 10px; height:100px; display:none;} 
@@ -102,7 +102,7 @@ a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 
 #footer-wrapper{background:#fff; margin:0 auto; width:951px; position:relative; overflow:hidden; z-index:6; height:300px;}
 #footer-content{padding:0px 17px;}
 #footer-logo{float:left; text-align:center;	padding:35px 0 0;}
-#footer-logo-link{display:block; text-indent:-9999px; background:url(images/core-img.png) no-repeat -20px -318px; height:135px; width:190px; font-size:14px;}
+#footer-logo-link{display:block; text-indent:-9999px; background:url(images/core-img.png) no-repeat -3px -185px; height:135px; width:190px; font-size:14px;}
 #footer-links{background:#1e1e1e; width:725px; height:290px; float:right; margin:0 -17px 0 0; color:#959595; border-top:#0676b1 10px solid;}
 #footer-col-group{padding:0 0 0 40px; height:265px;}
 .footer-col{padding:35px 0 0 0; width:165px; float:left;}
