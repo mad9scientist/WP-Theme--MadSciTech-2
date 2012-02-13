@@ -14,11 +14,17 @@ Version: 1.3
 body{font-family:Arial, Helvetica, sans-serif;	font-size:12px;	background:#008cd5;}
 #page-wrap{	width:1050px; margin:auto;}
 #header{background:#fff; height:130px; width:951px; margin:15px auto 0; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; border-radius:10px 10px 0 0;}
-#home-link{display:block; text-indent:-9999px; /*background:url(images/logo.png) no-repeat;*/ background:url(images/core-img.png) 7px 17px no-repeat; height:90px; width:285px; font-size:24px;}
+#home-link{display:block; text-indent:-9999px; background:url(images/core-img.png) -20px -108px no-repeat; height:90px; width:285px; font-size:24px;}
 #header-content{padding:20px 20px 0px;}
 #header-sitecontrols{float:right; width:300px; height:20px; text-align:right; position:relative;}
-.hdr-rss{width:90px; position:absolute; right:0px;}
-a.hdr-rss{/*background:url(images/rss.png) no-repeat scroll right center;*/ background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 25px 0 0; display:block; height:22px; width:auto; text-decoration:none;}
+/*.hdr-rss{width:90px; position:absolute; right:0px;}
+a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 25px 0 0; display:block; height:22px; width:auto; text-decoration:none;}*/
+/* Header Social Icons */
+#header-content .hdrSocialIco{display:inline-block; width:24px; height:24px; text-indent:-9999px; margin:0 0 0 2px;}
+.hdrIcoFB{background: url(images/core-img.png) no-repeat -10px -54px;}
+.hdrIcoTwitter{background: url(images/core-img.png) no-repeat -10px -10px;}
+.hdrIcoGoogle{background: url(http://madscitech.com/google+/gplus.png) no-repeat;}
+/* Google+ Icon from: http://www.matthodder.com/free-google-plus-icons/ GPL */
 #site-search{border:1px solid #ddd; height:35px; margin:25px 0 0; position:absolute; right:0; top:20px; width:205px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; -webkit-box-shadow:0 0 5px 0 #ccc inset; -moz-box-shadow:0 0 5px 0 #ccc inset; box-shadow:0 0 5px 0 #ccc inset; display:none;}
 #site-search-field{padding:8px 54px 0px 5px;}
 #site-search-field input{border:#fff 0px solid;	font-family:Fontin, Arial, Helvetica, sans-serif;font-style:italic; font-size:16px;}
@@ -26,7 +32,7 @@ a.hdr-rss{/*background:url(images/rss.png) no-repeat scroll right center;*/ back
 #nav{background:url(images/navbg.png); border-left:medium none; border-right:medium none; border-top:1px solid #ddd; display:block; font-size:18px; font-weight:bold; height:45px; line-height:45px; margin:auto; padding:0 60px; position:relative; width:906px; z-index:10; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px;}
 #nav_mainlinks{float:left;}
 #nav_secondarylinks{float:right; display:none;}
-#nav li{display:inline;padding-right:0.6em;}
+#nav li{display:inline;padding-right:0.6em; }
 #content{background:#fff; position:relative; z-index:3; width:951px; margin:auto; min-height:650px;}
 #articles{width:620px; float:left; padding:5px 0 0 0; margin:15px 0 25px 5px; border:1px solid #ddd; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
 #FMA{height:226px; margin-top:10px; margin-bottom:-27px; padding-bottom:18px; border-bottom:2px dotted #bbb;}
@@ -35,6 +41,7 @@ a.hdr-rss{/*background:url(images/rss.png) no-repeat scroll right center;*/ back
 .article{margin:10px 0; padding:5px;}
 .article h2 {padding:5px;}
 .post h2{padding:10px 10px 5px;}
+.page-hdr:after{content:" "; border:1px solid #ddd; display:block; margin:10px -4px -15px; box-shadow:0 0 1px #bbb;}
 .post-meta{ background:url(images/ddddot.png) repeat-x scroll center center; margin:0 8px; font:12px/1.3em Georgia, Serif; color:#555;}
 .post-meta span{background:#fff; padding:0 10px; margin-left:15px;}
 .post-meta span a { text-decoration:none; color:#555;}
@@ -45,9 +52,15 @@ a.hdr-rss{/*background:url(images/rss.png) no-repeat scroll right center;*/ back
 .post-entry dd{padding-left:40px;}
 .article-padding{ padding:5px 5px 10px 5px;}
 .article p{padding:5px 8px 5px;}
+#navigation { text-align:center; padding:8px 0; margin:0 20%; }
+#navigation a:hover{ background:none;}
+.next-posts {width:150px; float:left;}
+.prev-posts {width:150px; float:right;}
+#archive-link{margin:auto 15px 10px; display:block; border:1px solid #ddd; color:#555; height:25px; background:url(images/navbg.png); line-height:25px; color:#555; text-align:center; text-decoration:none; font-weight:bold; font-size:14px; font-family:sans-serif; border:1px solid #ddd; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+#archive-link:hover{background:#E8E8E8; cursor:pointer;}
 #aside{float:right; width:300px; padding:15px 10px 15px 0px;}
 .aside-item{margin-bottom:15px;}
-.aside-hdr{width:294px; background:url(images/navbg.png); border:1px solid #ddd; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;;}
+.aside-hdr{width:294px; background:url(images/navbg.png); border:1px solid #ddd; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
 .aside-hdr h3{color:#444; text-align:left; line-height:1.75em; padding:0 20px;}
 .aside-content{margin:0 5px 5px; padding:5px; width:280px; -moz-border-radius-bottomleft:10px; -moz-border-radius-bottomright:10px; -webkit-border-bottom-left-radius:10px; -webkit-border-bottom-right-radius:10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
 /* Support Options Block */
@@ -55,9 +68,9 @@ a.hdr-rss{/*background:url(images/rss.png) no-repeat scroll right center;*/ back
  #support-opt{width:280px; overflow:auto;}
  #support-opt .onpremise, #support-opt .remote, #support-opt .online{display:block; width:80px; height:80px; margin:7px 0 7px 10px; float:left;   background:#ccc;} /* Kill background*/
  /* Icons */
- #support-opt .onpremise{background:url("images/support_opt.png") no-repeat 0 0; border-radius:5px; box-shadow:0 0 1px 0 #369;}
- #support-opt .remote{background:url("images/support_opt.png") no-repeat -90px 0; border-radius:5px; box-shadow:0 0 1px 0 #369;}
- #support-opt .online{background:url("images/support_opt.png") no-repeat -180px 0; border-radius:5px; box-shadow:0 0 1px 0 #369;}
+ #support-opt .onpremise{background:url("images/core-img.png") no-repeat -20px -218px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
+ #support-opt .remote{background:url("images/core-img.png") no-repeat -110px -218px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
+ #support-opt .online{background:url("images/core-img.png") no-repeat -200px -218px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
  .support_opt_selected,#support-opt .onpremise:focus, #support-opt .onpremise:active, #support-opt .remote:focus, #support-opt .remote:active, #support-opt .online:focus, #support-opt .online:active{-webkit-box-shadow:0 0 4px 2px #369 !important; -moz-box-shadow:0 0 4px 2px #369 !important; box-shadow:0 0 4px 2px #369 !important;}
  /* Info Box */
  #onpremise-info, #remote-info, #online-info{padding:90px 0 0; margin:5px 5px 0 10px; height:100px; display:none;} 
@@ -67,7 +80,7 @@ a.hdr-rss{/*background:url(images/rss.png) no-repeat scroll right center;*/ back
 #footer-wrapper{background:#fff; margin:0 auto; width:951px; position:relative; overflow:hidden; z-index:6; height:300px;}
 #footer-content{padding:0px 17px;}
 #footer-logo{float:left; text-align:center;	padding:35px 0 0;}
-#footer-logo-link{display:block; text-indent:-9999px; /*background:url(images/logo-square.png) no-repeat; height:150px;*/ background:url(images/core-img.png) no-repeat 9px -70px; height:135px; width:190px; font-size:14px;}
+#footer-logo-link{display:block; text-indent:-9999px; background:url(images/core-img.png) no-repeat -20px -318px; height:135px; width:190px; font-size:14px;}
 #footer-links{background:#1e1e1e; width:725px; height:290px; float:right; margin:0 -17px 0 0; color:#959595; border-top:#0676b1 10px solid;}
 #footer-col-group{padding:0 0 0 40px; height:265px;}
 .footer-col{padding:35px 0 0 0; width:165px; float:left;}
@@ -83,7 +96,7 @@ a:visited {	color:#00a7ff;}
 #nav a{	color:#0066CC;	text-decoration:none;}
 #nav a:hover, a:active{color:#0099FF; text-decoration:none;}
 /* Active Section Highlighter */
-.current_page_ancestor, .current_page_item, .current_page_parent{position:relative; top:0px; padding-top:0.4em; padding-bottom:2em; padding-left:0.6em; background:#fff; border-color:#bbb; border-style: solid solid none; border-width:1px 1px medium;}
+.current_page_ancestor, .current_page_item, .current_page_parent{position:relative; top:0px; padding:7px 0 28px 10px; background:#fff; border-color:#bbb; border-style: solid solid none; border-width:1px 1px medium; -webkit-border-top-left-radius: 8px; -webkit-border-top-right-radius: 8px; -moz-border-radius-topleft: 8px; -moz-border-radius-topright: 8px; border-top-left-radius: 8px; border-top-right-radius: 8px;}
 /* Typograph */
 p {font-size:13px;}
 h1, h2, h3, h4, h5, h6{	font-family:"Helvetica Neue", "Helvetica Std", Helvetica, Arial, San-serif; font-weight:normal;}
@@ -109,9 +122,9 @@ blockquote p:first-letter {padding-left: 18px; font: 1.4em Georgia, "Times New R
 .faq-a p{ margin:15px 0 0 55px; font-size:14px;}
 .faq-a ol {font-size: 14px; margin: 5px 0 0 55px;}
 .faq-a h3{margin: 15px 0 0 55px;}
-.post-type-archive-mstfaqpost .faq_list_links{border:0 none; background:#eee; padding:5px 8px; margin:10px 0; font-size:14px; font-weight:bold; display:block; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
-.post-type-archive-mstfaqpost .faq_list_links:hover{-webkit-box-shadow:0 0 3px #369; -moz-box-shadow:0 0 3px #369; box-shadow:0 0 3px #369;}
-.mst_faq_post .entry-title {border-bottom:1px solid #ddd;}
+.post-type-archive-mst_faq_post .faq_list_links, .post-type-archive-mst_podcast_post .podcast_list_links{border:0 none; background:#eee; padding:5px 8px; margin:10px 0; font-size:14px; font-weight:bold; display:block; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+.post-type-archive-mst_faq_post .faq_list_links:hover, .post-type-archive-mst_podcast_post .podcast_list_links:hover {-webkit-box-shadow:0 0 3px #369; -moz-box-shadow:0 0 3px #369; box-shadow:0 0 3px #369;}
+.mst_faq_post .entry-title, .mst_podcast_post .entry-title {border-bottom:1px solid #ddd;}
 .faq_search{border-top:1px solid #ddd; border-bottom:1px solid #ddd; position:relative;}
 .faq-submit{width:165px; display:block; width:165px; text-align:center; padding:5px 8px; position:absolute; top:8px; right:0px;}
 /* Question and Answer Blocks for FAQs or Q/A Sections */
@@ -208,6 +221,7 @@ textarea{font-family:Arial, Helvetica, sans-serif;font-size:12px;}
 
 /* Poll Bars*/
 .wp-polls .pollbar {margin: 1px;font-size: 13px;line-height: 15px;height: 15px;background: #008cd5;border: 1px solid #008cd5;}
+
 }
 
 @media print {

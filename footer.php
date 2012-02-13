@@ -22,20 +22,21 @@
             <div class="footer-col-text">
               <ul>
                 <li><a href="/forums/">Support Forums</a></li>
-                <li><a href="<?php bloginfo('siteurl'); ?>/category/faqs/">FAQs</a></li>
+                <li><a href="<?php bloginfo('siteurl'); ?>/faqs/">FAQs</a></li>
               </ul>
             </div>
           </div>
           <div class="footer-col">
-            <div class="footer-col-header">Projects</div>
+            <div class="footer-col-header">Support Option</div>
             <div class="footer-col-text">
               <ul>
-                <li><a href="http://ticket.madscitech.com">Support Ticket System</a></li>
-                <li><a href="<?php bloginfo('siteurl'); ?>/support/remote/">Remote Support</a></li>                
+                <!-- <li><a href="http://ticket.madscitech.com">Support Ticket System</a></li> -->
+                <li><a href="<?php bloginfo('siteurl'); ?>/services/onpremise/">On Premise Support</a></li>
+                <li><a href="<?php bloginfo('siteurl'); ?>/services/remote/">Remote Support</a></li>                
               </ul>
             </div>
           </div>
-          <div class="footer-col">
+          <!-- <div class="footer-col">
             <div class="footer-col-header">Services</div>
             <div class="footer-col-text">
               <ul>
@@ -45,7 +46,7 @@
                 <li><a href="<?php bloginfo('siteurl'); ?>/services/b2b/">Business Solutions</a></li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <div class="clear"></div>
         </div>
         <div id="copyleft">
@@ -90,3 +91,4 @@ pageTracker._trackPageview();
 } catch(err) {}</script>
 </body>
 </html>
+<!-- <?php echo $wpdb->num_queries; ?> <?php _e('queries'); ?>. <?php timer_stop(1); ?> <?php _e('seconds'); ?> -->

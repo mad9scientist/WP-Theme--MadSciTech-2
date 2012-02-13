@@ -45,7 +45,7 @@ get_header();
           if ( have_posts() )
 			       while ( have_posts() ) : the_post(); ?>
 				        <div <?php post_class('article') ?> id="post-<? the_ID() ?>">
-				          <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				          <h2><?php edit_post_link('&#9997;','',' '); ?> <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                    <div class="post-meta">
                         <span><em>Posted on:</em> <?php the_time('F jS, Y') ?></span>
                    </div>
@@ -57,7 +57,8 @@ get_header();
 
             //Reset Query
             wp_reset_query(); ?>
-        <!-- END - Get first thre most current post -->
+        <!-- END - Get first four most current post -->
+        <a href="/articles/" id="archive-link">More Articles</a>
 	</div>
 <?php
 	get_sidebar();

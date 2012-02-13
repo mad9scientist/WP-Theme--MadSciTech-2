@@ -1,10 +1,13 @@
 <?php 
-  error_reporting(E_ALL);
-  ini_set('display_errors','On');
+  //error_reporting(E_ALL);
+  //ini_set('display_errors','On');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head profile="http://gmpg.org/xfn/11">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//madscitech.staticookie.com">
+<link rel="dns-prefetch" href="//google-analytics.com">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title>
 <?php wp_title('&laquo;', true, 'right'); ?>
@@ -53,6 +56,13 @@
       </div> 
       <div class="clear"></div>
     </div>  */ ?>
+    
+    <div class="floatRight">
+      <a href="/google+/" titile="Join us on Google+" class="hdrSocialIco hdrIcoGoogle">Join us on Google+</a>
+	    <a href="/facebook/" title="Like us on Facebook" class="hdrSocialIco hdrIcoTwitter">Like us on Facebook</a>
+	    <a href="/twitter/" title="Follow us on Twitter" class="hdrSocialIco hdrIcoFB">Follow us on Twitter</a>
+    </div>
+    
     <h1><a href="<?php echo get_option('home'); ?>/" id="home-link">
       <?php bloginfo('name'); ?>
       </a></h1>

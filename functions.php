@@ -30,8 +30,8 @@ add_filter('the_generator','killVersion');
 function jQuery_CDN() {
   if (!is_admin()) {
     wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js',false,'1.5.2',true);
-    wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js',false,'1.5.2',true );
+    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',false,'1.7.1',true);
+    wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',false,'1.7.1',true );
   }
 }    
 add_action('init', 'jQuery_CDN');
@@ -79,12 +79,116 @@ add_filter('pre_get_posts','excludeCatsfromFeed');
         	'singular_label'  =>    __('FAQ'),
         	'public'          =>    true,
         	'show_ui'         =>    true,
+        	'menu_icon'       =>    '/mst/wp-content/themes/MadSciTech-2/images/faqs.png',
         	'capability_type' =>    'post',
         	'hierarchical'    =>    false,
-        	'rewrite'         =>    array('slug' => 'faqs'), 
+        	'rewrite'         =>    array('slug' => 'faqs', 'with_front' => false), 
         	'has_archive'     =>    true,
         	'supports'        =>    array('title', 'editor', 'comments')
         );
 
     	register_post_type( 'mst_faq_post' , $args );
 	}                     
+
+
+// Custom Post Types - Screencasts
+  add_action('init', 'screencast_register');
+  
+  function screencast_register(){
+    $args = array(
+        'label'             =>    __('Podcasts'),
+        'singular_label'    =>    __('Podcast'),
+        'public'            =>    true,
+        'show_ui'           =>    true,
+        'menu_icon'         =>    '/mst/wp-content/themes/MadSciTech-2/images/video.png',
+        'capability_type'   =>    'post',
+        'hierarchical'      =>    false,
+        'rewrite'           =>    array('slug' => 'screencasts', 'with_front' => false),
+        'has_archive'       =>    true,
+        'supports'          =>    array('title', 'editor', 'comments')
+    );
+  
+    register_post_type( 'mst_podcast_post' , $args );
+  }
+  
+  // Podcasts Video Embed Field
+  add_action("admin_init", "admin_init");
+  add_action('save_post', 'save_video');
+  
+  function admin_init(){
+  	add_meta_box("podcast-meta", "Video Embed", "meta_options", "mst_podcast_post", "side", "low");
+  }
+  
+  function meta_options(){
+  	global $post;
+  	$custom = get_post_custom($post->ID);
+  	$video_link = $custom['mst_video_embed'][0];
+  
+    echo '<label id="video_code">Video Embed Code</label><textarea id="video_code" name="video_embed" style="height:100px; width:100%;">';
+    echo $video_link;
+    echo '</textarea>';
+  }
+  
+  function save_video(){
+  	global $post;
+  	update_post_meta($post->ID, "mst_video_embed", $_POST["video_embed"]);
+  }
+
+
+  #function mst_faq_comments_open($open, $post_id, $post_type = 'mst_faq_post'){
+    /* Based upon Exclude A Category From Turn Off Comments Automatically
+       URL: http://wpengineer.com/1944/exclude-category-from-turnoff-comments-automatically/  */
+  #  global $wp_query;
+  #  if(!$post_id){
+  #    $post_id = $wp_query->post->ID;
+  #  }
+   
+  #  if(get_post_type($post_id) === $post_type ){
+  #    return true;
+  #  } 
+#}
+#add_filter('comments_open', 'mst_faq_comments_open', 10, 2);
+
+# Move WP Admin Bar to Bottom of Window on Site
+/*function wpc_bar_bottom() { 
+	<style type="text/css">
+		body {
+			margin-top: -28px;
+			padding-bottom: 28px;
+		} 
+		body.admin-bar #wphead {
+			padding-top: 0;
+		}
+		body.admin-bar #footer {
+			padding-bottom: 28px;
+		}
+		#wpadminbar {
+			top: auto !important;
+			bottom: 0;
+		}
+		#wpadminbar .quicklinks .menupop ul {
+			bottom: 28px;
+		}
+	</style>
+}
+
+if(current_user_can('level_10')){
+// WP-Admin
+//add_action( 'admin_head', 'wpc_bar_bottom' );
+// Front-End
+add_action( 'wp_head', 'wpc_bar_bottom');
+}*/
+
+/**
+ * Remove default admin links.
+ 
+   Array of links to remove. Choose from:
+	'my-account-with-avatar', 'my-account', 'my-blogs', 'edit', 'new-content', 'comments', 'appearance', 'updates', 'get-shortlink'
+	 */
+function mytheme_admin_bar_render() {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu('appearance');
+}
+add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
+

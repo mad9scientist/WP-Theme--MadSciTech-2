@@ -6,7 +6,7 @@ get_header();
 	<div id="articles">
  		<div <?php post_class('article'); ?> id="post-<?php the_ID(); ?>">
       <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <h1 class="entry-title"><?php edit_post_link('&#9997;','',' '); ?> Q: <?php the_title(); ?></h1>
 
       	<div class="post-entry">
       	   

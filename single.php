@@ -6,7 +6,7 @@ get_header();
 
 
 		<div <?php post_class('article') ?> id="post-<?php the_ID(); ?>">
-			<h2><?php the_title(); ?></h2>
+			<h2><?php edit_post_link('&#9997;','',' '); the_title(); ?></h2>
       <div class="post-meta">
     		<span>Posted on <em><?php the_time('l, F jS, Y') ?></em> | by <em><a href="<?php the_author_url(); ?>"><?php the_author() ?></a></em></span>
     	</div>
