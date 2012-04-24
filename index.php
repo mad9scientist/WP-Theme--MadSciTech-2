@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <?php 
-	query_posts('cat=-4');
 	if (have_posts()) : ?>
 	<div id="articles">
 	<?php while (have_posts()) : the_post(); ?>
@@ -16,7 +15,11 @@
 		</div>
 
 	<?php endwhile; ?>
-
+		<div id="navigation">
+	  		<?php next_posts_link('<div class="next-posts button">&laquo; Older Articles</div>') ?>
+	  		<?php previous_posts_link('<div class="prev-posts button">Newer Articles &raquo;</div>') ?>
+	     	<div class="clear"></div>
+	    </div>
 	
 <?php else : ?>
 	<h2>Not Found</h2>
@@ -24,11 +27,7 @@
 	<?php get_search_form(); ?>
 
 <?php endif; ?>
-	 	<div id="navigation">
-  	 <?php next_posts_link('<div class="next-posts button">&laquo; Older Articles</div>') ?>
-  	 <?php previous_posts_link('<div class="prev-posts button">Newer Articles &raquo;</div>') ?>
-      <div class="clear"></div>
-    </div>
+		
 	</div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
