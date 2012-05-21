@@ -132,6 +132,7 @@ blockquote p:first-letter {padding-left: 18px; font: 1.4em Georgia, "Times New R
 .article ul{ margin:10px 0;}
 .article ul li{	margin-left:30px; list-style:square;}
 .article ul ul li {list-style:url("images/icon_raquo.png");}
+.article table {border-spacing: 8px 4px; border-collapse: none;}
 /* Question and Answer Blocks for FAQs or Q/A Sections */
 .faqs li { list-style:square outside url("images/icon_raquo.png"); margin:0 0 2px 15px; }
 .faqs li a { color:#000; text-decoration:none;}
