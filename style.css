@@ -7,7 +7,7 @@ Created: November-December 2009 (Updated Febuary 2012)
 Version: 1.3.3g
 */
 
-/* Need some responsive design - yes */
+/** Need some responsive design - yes **/
 /* Print Styles */
 @media print {
 body { font-family:sans-serif;background:none;color: black;}
