@@ -3,7 +3,7 @@
   <div id="footer-wrapper">
     <div id="footer-content">
       <div id="footer-logo"> <a href="/" id="footer-logo-link">Mad Scientist Technologies</a><br />
-        Kinderhook, Illinois 62345<br />
+        Quincy, Illinois 62301<br />
         1-775-MAD-SCI-9<br />
         &#115;&#116;&#097;&#102;&#102;&#064;&#109;&#097;&#100;&#115;&#099;&#105;&#116;&#101;&#099;&#104;&#046;&#099;&#111;&#109;</div>
       <div id="footer-links">
