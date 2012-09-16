@@ -11,7 +11,7 @@ License URI: http://madscitech.com/about/trademarks/
 Version: 1.3.3g
 */
 
-/** Need some responsive design - yes **/
+/*** Need some responsive design - yes ***/
 /* Print Styles */
 @media print {
 body { font-family:sans-serif;background:none;color: black;}
