@@ -38,10 +38,10 @@
 <div id="page-wrap">
 <div id="header">
   <div id="header-content">
-    <?php /*<div id="header-sitecontrols">
-      // Welcome, <a href="">Sign In</a> | <a href="">Help</a> 
-      <div class="hdr-rss"><a class="hdr-rss" href="<?php bloginfo('rss2_url'); ">Subscribe</a></div>
-      <?php /* <div id="site-search">
+    <div id="header-sitecontrols">
+      <?php #Welcome, <a href="">Sign In</a> | <a href="">Help</a> 
+      #<div class="hdr-rss"><a class="hdr-rss" href="<?php bloginfo('rss2_url'); ">Subscribe</a></div> ?>
+       <div id="site-search">
         <div id="site-search-field">
           <form action="http://madscitech.com/search/" id="cse-search-box">
             <div>
@@ -49,15 +49,12 @@
               <input type="hidden" name="cof" value="FORID:9" />
               <input type="hidden" name="ie" value="UTF-8" />
               <input type="text" name="q" size="20" value="Search..." id="s" />
-              <div id="site-search-btn">
-                <input type="image" name="sa" value="Search" src="<?php bloginfo('template_directory'); ?><? /* /images/search-btn.gif" />
-              </div>
             </div>
           </form>
         </div>
       </div> 
       <div class="clear"></div>
-    </div>  */ ?>
+    </div>  
     
     <div class="floatRight socialIcons">
       <a href="/google+/" titile="Join us on Google+" class="hdrSocialIco hdrIcoGoogle">Join us on Google+</a>

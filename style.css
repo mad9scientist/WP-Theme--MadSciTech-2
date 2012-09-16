@@ -42,7 +42,7 @@ body{font-family:Arial, Helvetica, sans-serif;	font-size:12px;	background:#008cd
 #header{background:#fff; height:130px; width:951px; margin:15px auto 0; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; border-radius:10px 10px 0 0;}
 #home-link{display:block; text-indent:-9999px; background:url(images/core-img.png) -4px 0px no-repeat; height:90px; width:285px; font-size:24px;}
 #header-content{padding:20px 20px 0px;}
-#header-sitecontrols{float:right; width:300px; height:20px; text-align:right; position:relative;}
+#header-sitecontrols{float:right; height:20px; text-align:right; position:relative;}
 /*.hdr-rss{width:90px; position:absolute; right:0px;}
 a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 25px 0 0; display:block; height:22px; width:auto; text-decoration:none;}*/
 /* Header Social Icons */
@@ -51,7 +51,7 @@ a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 
 .hdrIcoTwitter{background: url(images/core-img.png) no-repeat -201px -190px;}
 .hdrIcoGoogle{background: url(images/core-img.png) no-repeat -261px -190px;}
 /* Google+ Icon from: http://www.matthodder.com/free-google-plus-icons/ GPL */
-#site-search{border:1px solid #ddd; height:35px; margin:25px 0 0; position:absolute; right:0; top:20px; width:205px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; -webkit-box-shadow:0 0 5px 0 #ccc inset; -moz-box-shadow:0 0 5px 0 #ccc inset; box-shadow:0 0 5px 0 #ccc inset; display:none;}
+#site-search{background:#fff; border:1px solid #ddd; height:35px; position:absolute; right:0; top:115px; width:205px; z-index: 25; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; -webkit-box-shadow:0 0 5px 0 #ccc inset; -moz-box-shadow:0 0 5px 0 #ccc inset; box-shadow:0 0 5px 0 #ccc inset; display:none;}
 #site-search-field{padding:8px 54px 0px 5px;}
 #site-search-field input{border:#fff 0px solid;	font-family: Arial, Helvetica, sans-serif;font-style:italic; font-size:16px;}
 #site-search-btn{margin:-23px -45px 0 0;}
