@@ -80,8 +80,8 @@ a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 
 .article p{padding:5px 8px 5px;}
 #navigation { text-align:center; padding:8px 0; margin:0 20%; }
 #navigation a:hover{ background:none;}
-.next-posts {width:150px; float:left;}
-.prev-posts {width:150px; float:right;}
+.next-posts {width:150px; height:30px; line-height:30px; float:left;}
+.prev-posts {width:150px; height:30px; line-height:30px; float:right;}
 #archive-link{margin:auto 15px 10px; display:block; border:1px solid #ddd; color:#555; height:25px; background:url(images/navbg.png); line-height:25px; color:#555; text-align:center; text-decoration:none; font-weight:bold; font-size:14px; font-family:sans-serif; border:1px solid #ddd; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
 #archive-link:hover{background:#E8E8E8; cursor:pointer;}
 #aside{float:right; width:300px; padding:15px 10px 15px 0px;}
