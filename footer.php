@@ -1,3 +1,6 @@
+<?php
+  $themeDir = get_template_directory_uri();
+?>
     <div class="clear"></div>
   </div>
   <div id="footer-wrapper">
@@ -12,8 +15,8 @@
             <div class="footer-col-header">About</div>
             <div class="footer-col-text">
               <ul>
-                <li><a href="<?php bloginfo('siteurl'); ?>/about/">About Us</a></li>
-                <li><a href="<?php bloginfo('siteurl'); ?>/about/contact/">Contact Us</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/about/contact/">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -22,7 +25,7 @@
             <div class="footer-col-text">
               <ul>
                 <li><a href="/forums/">Support Forums</a></li>
-                <li><a href="<?php bloginfo('siteurl'); ?>/faqs/">FAQs</a></li>
+                <li><a href="/faqs/">FAQs</a></li>
               </ul>
             </div>
           </div>
@@ -31,8 +34,8 @@
             <div class="footer-col-text">
               <ul>
                 <!-- <li><a href="http://ticket.madscitech.com">Support Ticket System</a></li> -->
-                <li><a href="<?php bloginfo('siteurl'); ?>/services/onpremise/">On Premise Support</a></li>
-                <li><a href="<?php bloginfo('siteurl'); ?>/services/remote/">Remote Support</a></li>                
+                <li><a href="/services/onpremise/">On Premise Support</a></li>
+                <li><a href="/services/remote/">Remote Support</a></li>                
               </ul>
             </div>
           </div>
@@ -40,10 +43,10 @@
             <div class="footer-col-header">Services</div>
             <div class="footer-col-text">
               <ul>
-                <li><a href="<?php bloginfo('siteurl'); ?>/services/computer/">Computer Services</a></li>
-                <li><a href="<?php bloginfo('siteurl'); ?>/services/networking/">Network Services</a></li>
-                <li><a href="<?php bloginfo('siteurl'); ?>/services/web/">Web Services</a></li>
-                <li><a href="<?php bloginfo('siteurl'); ?>/services/b2b/">Business Solutions</a></li>
+                <li><a href="/services/computer/">Computer Services</a></li>
+                <li><a href="/services/networking/">Network Services</a></li>
+                <li><a href="/services/web/">Web Services</a></li>
+                <li><a href="/services/b2b/">Business Solutions</a></li>
               </ul>
             </div>
           </div> -->
@@ -68,16 +71,16 @@ wp_footer();
 if (is_page_template('home-page.php')) { 
 ?>
 
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.easing.1.2.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.anythingslider.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slider.min.js"></script>
+<script type="text/javascript" src="<?php echo $themeDir; ?>/js/jquery.easing.1.2.min.js"></script>
+<script type="text/javascript" src="<?php echo $themeDir; ?>/js/jquery.anythingslider.min.js"></script>
+<script type="text/javascript" src="<?php echo $themeDir; ?>/js/slider.min.js"></script>
 <!--[if lt IE 7]>
   <script type='text/javascript'>  
     $(".homepage-hdr:first-child").addClass("homepage-hdr-correction");  
   </script>    
 <![endif]-->
 <?php } ?>
-<script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/js/madscitech.js'></script>
+<script type='text/javascript' src='<?php echo $themeDir; ?>/js/madscitech.js'></script>
 
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -92,4 +95,4 @@ if (is_page_template('home-page.php')) {
 
 </body>
 </html>
-<!-- <?php echo $wpdb->num_queries; ?> <?php _e('queries'); ?>. <?php timer_stop(1); ?> <?php _e('seconds'); ?> -->
+<!-- <?php echo $wpdb->num_queries; ?> <?php echo 'queries'; ?>. <?php timer_stop(1); ?> <?php echo "seconds. Theme: $themeDir"; ?> -->

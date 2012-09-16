@@ -11,7 +11,7 @@ get_header();
             <div class="anythingSlider">
                 <div class="wrapper">
                     <ul>
-                        <? 	// Page ID to FMA Page
+                        <?php 	// Page ID to FMA Page
 							query_posts('page_id=16');
 							if (have_posts()) : while (have_posts()) : the_post();
 								the_content();
@@ -24,7 +24,7 @@ get_header();
             </div>
             <!-- END AnythingSlider -->
         </div>
-         <? //Page ID to HomePage Sticky
+         <?php //Page ID to HomePage Sticky
 			       query_posts('page_id=18');
       			 if (have_posts()) : while (have_posts()) : the_post();
       			   the_content();
@@ -44,7 +44,7 @@ get_header();
           //The Loop
           if ( have_posts() )
 			       while ( have_posts() ) : the_post(); ?>
-				        <div <?php post_class('article') ?> id="post-<? the_ID() ?>">
+				        <div <?php post_class('article') ?> id="post-<?php the_ID() ?>">
 				          <h2><?php edit_post_link('&#9997;','',' '); ?> <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                    <div class="post-meta">
                         <span><em>Posted on:</em> <?php the_time('F jS, Y') ?></span>

@@ -8,9 +8,9 @@ get_header();
 
   <h2>All Frequently Asked Questions</h2>
 
-		<form class="faq_search" method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+		<form class="faq_search" method="get" id="searchform" action="<?php echo home_url(); ?>/">
      	<div id="search-field-page"><label>Search <?php single_cat_title(); ?>: </label>
-      	<input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
+      	<input type="text" value="<?php echo esc_html($s); ?>" name="s" id="s" />
       	<input type="hidden" name="post_type" value="mst_faq_post" />
       	<input type="submit" id="searchsubmit" value="Search" />
       </div>

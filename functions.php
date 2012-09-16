@@ -1,5 +1,5 @@
 <?php
-automatic_feed_links();
+add_theme_support( 'automatic-feed-links' );
 /* Sidebar Widget */
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
@@ -20,7 +20,12 @@ remove_action('wp_head', 'start_post_rel_link', 10, 0);
 remove_action('wp_head', 'parent_post_rel_link', 10, 0);
 remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 // Removes l10n.js from head 
-wp_deregister_script('l10n');
+function rm_l10n(){
+  if(!is_admin()){
+    wp_deregister_script('l10n');
+  }
+}
+add_action('init','rm_l10n');
 // No Announcing of for Fail Login
 add_filter('login_errors',create_function('$a', "return null;"));
 // Kill Version Number
@@ -30,8 +35,8 @@ add_filter('the_generator','killVersion');
 function jQuery_CDN() {
   if (!is_admin()) {
     wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',false,'1.7.1',true);
-    wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',false,'1.7.1',true );
+    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js',false,'1.8.1',true);
+    wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js',false,'1.8.1',true );
   }
 }    
 add_action('init', 'jQuery_CDN');
@@ -75,8 +80,8 @@ add_filter('pre_get_posts','excludeCatsfromFeed');
 
 	function faq_register() {
     	$args = array(
-        	'label'           =>    __('FAQs'),
-        	'singular_label'  =>    __('FAQ'),
+        	'label'           =>    'FAQs',
+        	'singular_label'  =>    'FAQ',
         	'public'          =>    true,
         	'show_ui'         =>    true,
         	'menu_icon'       =>    '/mst/wp-content/themes/MadSciTech-2/images/faqs.png',
@@ -96,8 +101,8 @@ add_filter('pre_get_posts','excludeCatsfromFeed');
   
   function screencast_register(){
     $args = array(
-        'label'             =>    __('Podcasts'),
-        'singular_label'    =>    __('Podcast'),
+        'label'             =>    'Podcasts',
+        'singular_label'    =>    'Podcast',
         'public'            =>    true,
         'show_ui'           =>    true,
         'menu_icon'         =>    '/mst/wp-content/themes/MadSciTech-2/images/video.png',

@@ -1,6 +1,9 @@
 <?php 
   //error_reporting(E_ALL);
   //ini_set('display_errors','On');
+  $themeDir = get_template_directory_uri();
+  $themeStyle = get_stylesheet_directory_uri();
+  $siteRoot = home_url();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
@@ -11,20 +14,19 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title>
 <?php wp_title('&laquo;', true, 'right'); ?>
-<?php bloginfo('name'); ?>
+<?php #bloginfo('name'); ?>
 </title>
-<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo $themeDir; ?>/images/favicon.ico" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <!--[if lt IE 9]>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/css/ie.css" />
-    <? print '<script type="text/javascript" src="';
-    bloginfo('template_directory');
-    print '/js/curvycorners.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo $themeStyle;?>/css/ie.css" />
+    <?php print '<script type="text/javascript" src="';
+    echo $themeDir . '/js/curvycorners.2.1.min.js"></script>
     <script type="text/javascript">var curvyCornersVerbose = false;</script>';
     ?>  
 <![endif]-->
 <!--[if lt IE 7]>
-     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/ie-style.css" />
+     <link rel="stylesheet" type="text/css" href="<?php echo $themeStyle; ?>/css/ie-style.css" />
 <![endif]-->
 
 <?php
@@ -63,7 +65,7 @@
 	    <a href="/twitter/" title="Follow us on Twitter" class="hdrSocialIco hdrIcoTwitter">Follow us on Twitter</a>
     </div>
     
-    <h1><a href="<?php echo get_option('home'); ?>/" id="home-link">
+    <h1><a href="<?php echo $siteRoot; ?>/" id="home-link">
       <?php bloginfo('name'); ?>
       </a></h1>
     <div class="clear"></div>

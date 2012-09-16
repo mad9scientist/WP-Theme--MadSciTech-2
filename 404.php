@@ -3,7 +3,7 @@ $value = "help";
 //set cookie
 setcookie("madscitech_com_404Helper",$value, time()+300);
 
-$ref = $_SERVER['HTTP_REFERER'];
+#$ref  = $_SERVER['HTTP_REFERER'];
 $page = $_SERVER['REQUEST_URI'];
 /**
  * @package WordPress
@@ -16,7 +16,7 @@ get_header();
 	<div class="article">
 		<div style="text-align:center">
         	<h2><i>Uh Oh! We Broke Something!</i><br />404 - Resource Not Found</h2>
-            <br /><br />Requested Page: <? echo $page; ?><br />
+            <br /><br />Requested Page: <?php echo $page; ?><br />
 <br />
 
 			We're sorry, the page you requested could not be found. <br />You may have received this error by following an outdated link or mistyped the address.<br />
@@ -32,12 +32,14 @@ get_header();
                     </form>
                     <br /><br />
 <br />
-<?
+<?php
 // If a user lands on the 404 page more than once in a five minute period
 // display contact information
-$cookie = $_COOKIE["madscitech_com_404Helper"];
+if(isset($_COOKIE["madscitech_com_404Helper"])){
+    $cookie = $_COOKIE["madscitech_com_404Helper"];
+}
 
-if ($cookie == "help")
+if (isset($cookie) && $cookie == "help")
 	print('<div style="width:275px; margin:0 auto;">It appears you can not find what your looking for...<br />If you want to inform the developers of the problem<br /><ul style="padding-left:20px; text-align:left;"><li style="list-style:square;"><a href="/about/contact/">Sent an error report</a></li><li style="list-style:square;">Contact us on <a href="http://twitter.com/home?status=@madscitech E404 '. $page .'">Twitter via @MadSciTech</a></li></ul></div>');
 ?>
         </div>

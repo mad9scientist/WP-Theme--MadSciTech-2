@@ -27,9 +27,9 @@ get_header();
 
 	<?php } ?>
 
-		<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+		<form method="get" id="searchform" action="<?php echo home_url(); ?>/">
            	<div id="search-field-page"><label>Search <?php single_cat_title(); ?>: </label>
-            	<input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
+            	<input type="text" value="<?php echo esc_html($s); ?>" name="s" id="s" />
             	<input type="hidden" name="cat" value="4" />
             	<input type="submit" id="searchsubmit" value="Search" />
             </div>
