@@ -37,7 +37,7 @@ $("#E404")
     });
 });
 
-    // The Sidebar Quick Links, More Info Icons (WTH, will be discontinued in v2.x [v3g1])
+    // The Sidebar Quick Links, More Info Icons (WTH, will be discontinued in v2.x [v3g])
     var onpremise, onPremiseInfo, remote, remoteInfo, online, onlineInfo;
     
     onPremise     =   $('#support-opt a.onpremise');
