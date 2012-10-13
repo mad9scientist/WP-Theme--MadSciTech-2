@@ -11,7 +11,7 @@ This theme is licensed under the Mad Scientist Technologies Commercial WordPress
 ## Git Pull Function
 This theme contains a feature to update the theme via a GitHub Service Hook, just add the url to the service hook location (e.g. http://example.com/github-service-file.php) in the Service Hook section of your GitHub Repo.
 
-Please note, if you have the 5G or Higher WordPress .htaccess Blacklist installed, you must remove the reference to git from it before it will work.
+Please note, if you have the 5G or Higher WordPress .htaccess Blacklist installed, you must remove the reference to git or any of the following symbols ( Curly Braces, Brackets, Colon ) from it before it will work.
 
 
 
