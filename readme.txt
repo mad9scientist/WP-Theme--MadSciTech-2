@@ -6,3 +6,5 @@ This theme was designed for use only by Mad Scientist Technologies / MadSciTech.
 
 ## License
 This theme is licensed under the Mad Scientist Technologies Commercial WordPress License, Mad Scientist Technologies Trademark Policy and BSD License, in that particular order.
+
+Last Update: Oct 2012
