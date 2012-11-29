@@ -133,8 +133,8 @@ h2{font-size:20px;}h3{font-size:18px;}h4{font-size:16px;}h5{font-size:14px;}
 blockquote p:first-letter {padding-left: 18px; font: 1.4em Georgia, "Times New Roman", Times, serif;}
 .code{background:#ccc; padding:10px; margin:10px 0px; border:1px dotted #000; line-height:1.75;}
 .post ul li { margin-left:20px;	list-style:square;}
-.article ul{ margin:10px 0;}
-.article ul li{	margin-left:30px; list-style:square;}
+.article ul, .article ol{ margin:10px 0;}
+.article ul li, .article ol li{	margin-left:30px; list-style:square;}
 .article ul ul li {list-style:url("images/icon_raquo.png");}
 .article table {border-spacing: 8px 4px; border-collapse: separate;}
 /* Question and Answer Blocks for FAQs or Q/A Sections */
