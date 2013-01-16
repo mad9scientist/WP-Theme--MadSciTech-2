@@ -36,7 +36,7 @@ a{text-decoration:none; color:#000;}hr{background-color: #ccc;}img{display:block
 
 /* RESET Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
 html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0;}fieldset,img{ border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul,li{list-style:none;}caption,th{text-align:left}q:before,q:after{ content:''}strong{font-weight:bold}em { font-style:italic }a img { border:none }
-
+* {	-webkit-transition: .2s all;-moz-transition: .2s all;-o-transition: .2s all;-ms-transition: .2s all;transition: .2s all;}
 body{font-family:Arial, Helvetica, sans-serif;	font-size:12px;	background:#008cd5;}
 #page-wrap{	width:1050px; margin:auto;}
 #header{background:#fff; height:130px; width:951px; margin:15px auto 0; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; border-radius:10px 10px 0 0;}
