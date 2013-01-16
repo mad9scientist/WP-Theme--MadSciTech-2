@@ -28,6 +28,11 @@
 */
     ?>  
 <![endif]-->
+<!--[if lte IE 7]>
+  <style type="text/css">
+    #header-content .hdrSocialIco{text-indent:0; font:0/0 a;}
+  </style>
+<![endif]-->
 <!--[if lt IE 7]>
      <link rel="stylesheet" type="text/css" href="<?php echo $themeStyle; ?>/css/ie-style.css" />
 <![endif]-->

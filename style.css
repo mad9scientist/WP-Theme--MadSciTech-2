@@ -46,7 +46,7 @@ body{font-family:Arial, Helvetica, sans-serif;	font-size:12px;	background:#008cd
 /*.hdr-rss{width:90px; position:absolute; right:0px;}
 a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 25px 0 0; display:block; height:22px; width:auto; text-decoration:none;}*/
 /* Header Social Icons */
-#header-content .hdrSocialIco{display:inline-block; width:24px; height:24px; text-indent:-9999px; margin:0 0 0 2px;}
+#header-content .hdrSocialIco{display:inline-block; width:24px; height:24px; margin:0 0 0 2px; text-indent: -9999em;}
 .hdrIcoFB{background: url(images/core-img.png) no-repeat -231px -190px;}
 .hdrIcoTwitter{background: url(images/core-img.png) no-repeat -201px -190px;}
 .hdrIcoGoogle{background: url(images/core-img.png) no-repeat -261px -190px;}
