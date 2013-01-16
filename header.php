@@ -28,6 +28,12 @@
 */
     ?>  
 <![endif]-->
+<!-- Forgive me, that I have sinned, with inline styles for Stupid Internet Explore!!! -->
+<!--[if IE 7]>
+  <style type="text/css">
+    #onpremise-info, #remote-info, #online-info {height:100px; width:92%; padding-top: 0px; }
+  </style>
+<![endif]-->
 <!--[if lte IE 7]>
   <style type="text/css">
     #header-content .hdrSocialIco{text-indent:0; font:0/0 a;}
