@@ -183,10 +183,12 @@ ol.commentlist li.bypostauthor{background:#C4E1FF;}
 #respond{margin:40px auto 0; padding:10px;}
 #respond h3{border-bottom:1px solid #ddd; color:#555;}
 #respond-padding{margin:15px 0;}
-#respond form label{width:80px; float:left;}
-#respond form input{border:2px #bbb solid; margin-bottom:5px; padding:2px; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius: 4px;}
-#respond form textarea{float:left; padding:10px; border:2px #bbb solid; margin-top:10px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px; width:90%; height:250px;}
-#respond form #submit{background:url(images/navbg.png); margin-top:15px; color:#555; font-weight:bold; font-size:14px; font-family:Arial, Helvetica, sans-serif; height:30px; width:130px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px; border:1px solid #ddd;}
+#respond form .labelgroups{width: 32.3%; display: inline-block; margin: 15px 0 8px 3px;}
+#respond form label{display:block; margin: 0 0 5px;}
+#respond form label .required{color:red; font-size: 1.4em; line-height: 0;}
+#respond form input{border:2px #bbb solid; margin-bottom:5px; padding:2px; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius: 2px;}
+#respond form textarea{float:left; padding:10px; border:2px #bbb solid; margin-top:10px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius: 3px; width:95%; height:250px;}
+#respond form #submit{background:url(images/navbg.png); margin-top:15px; color:#555; font-weight:bold; font-size:14px; font-family:Arial, Helvetica, sans-serif; height:30px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px; border:1px solid #ddd; padding: 5px 8px;}
 #respond form #submit:hover{cursor:pointer; background:#E8E8E8;}
 /* Forms */
 /*.button{background:url(images/core-img.png) no-repeat -15px -208px; color:#fff; font-weight:bold; font-size:14px; height:30px;	width:130px; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius: 10px; border:0px; margin-left:25px}*/

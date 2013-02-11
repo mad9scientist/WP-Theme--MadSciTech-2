@@ -54,6 +54,8 @@
 	<?php else : ?>
 
 	<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform"><div id="respond-padding">
+		
+		<textarea name="comment" id="comment" rows="10" tabindex="1"></textarea>
 
 		<?php if ( is_user_logged_in() ) : ?>
 
@@ -61,20 +63,25 @@
 
 		<?php else : ?>
 
-		<label for="author">Name</label><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
-		 <?php if ($req) echo "(required)"; ?><br />
-
-		<label for="email">Email</label> <input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-		 <?php if ($req) echo "(required)"; ?> (will not be published)<br />
-
-		<label for="url">Website</label><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
-		Optional<br />
+		<div class="labelgroups">
+			<label for="author">Name <span class="required">*</span></label>
+			<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="26" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> placeholder="What is your name?"/>
+			 <?php //if ($req) echo "(required)"; ?>
+		</div>
+		<div class="labelgroups">
+			<label for="email">Email <small>(will not be published)</small> <span class="required">*</span></label>
+			<input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="26" tabindex="3" <?php if ($req) echo "aria-required='true'"; ?> placeholder="We will not spam you"/>
+			 <?php //if ($req) echo "(required)"; ?>
+		</div>
+		<div class="labelgroups">
+			<label for="url">Website <small>(Optional)</small></label>
+			<input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="26" tabindex="4" placeholder="(Optional)" />
+		</div>
 
 		<?php endif; ?>
 
 		<!--<p><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->
 
-		<textarea name="comment" id="comment" cols="70" rows="10" tabindex="4"></textarea>
 		<div class="clear"></div>
 		<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment"  />
 		<?php comment_id_fields(); ?>
