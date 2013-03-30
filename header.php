@@ -81,9 +81,16 @@
 <div id="nav">
   <div id="nav_mainlinks">
     <ul>
-      <?php wp_list_pages('include=3,6,10&title_li=');?>
-      <li class="page_item page-item-0"><a title="Discussions" href="/forums/">Discussions</a></li>
-      <?php wp_list_pages('include=90,2&title_li='); ?>    
+      <?php
+        $args  = array(
+          'include' => '3,6,10,690,90,2',
+          'sort_column' => 'menu_order',
+          'post_type' => 'page',
+          'title_li' => '',
+          'echo' => 1
+         );
+        wp_list_pages($args);
+       ?> 
     </ul>
   </div>
   <?php /* print '<div id="nav_secondarylinks">

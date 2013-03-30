@@ -155,6 +155,12 @@ blockquote p:first-letter {padding-left: 18px; font: 1.4em Georgia, "Times New R
 .mst_faq_post .entry-title, .mst_podcast_post .entry-title {border-bottom:1px solid #ddd;}
 .faq_search{border-top:1px solid #ddd; border-bottom:1px solid #ddd; position:relative;}
 .faq-submit{width:165px; display:block; width:165px; text-align:center; padding:5px 8px; position:absolute; top:8px; right:0px;}
+/* MST Podcast Directory Styles*/
+.page-template-video-directory-php #articles{width: 98%;}
+.page-template-video-directory-php #articles .video{border:1px solid #ddd; margin:15px 0; overflow:auto; -webkit-border-radius:5px; -moz-border-radius: 5px; border-radius: 5px; }
+.page-template-video-directory-php #articles .video .thumb{ float: left; height: 150px; width:267px; border: 1px solid #bbb; margin: 8px 15px; -webkit-border-radius:5px; -moz-border-radius: 5px; border-radius: 5px; overflow: hidden;}
+.page-template-video-directory-php #articles .archive{display: block; margin-top: 25px; padding: 10px 25px; text-align: center;}
+.page-template-video-directory-php #articles .suggestion{display: block; margin: 10px 10px 10px 0; padding: 10px 25px; width: 20%;}
 /* Question and Answer Blocks for FAQs or Q/A Sections */
 .blogroll li { list-style:outside url(images/icon_raquo.png); margin:0 0 2px 15px; }
 .blogroll li a { color:#000; text-decoration:none;}

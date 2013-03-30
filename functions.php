@@ -128,15 +128,21 @@ add_filter('pre_get_posts','excludeCatsfromFeed');
   	global $post;
   	$custom = get_post_custom($post->ID);
   	$video_link = $custom['mst_video_embed'][0];
+    $video_thumbnail = $custom['mst_video_thumb'][0];
   
     echo '<label id="video_code">Video Embed Code</label><textarea id="video_code" name="video_embed" style="height:100px; width:100%;">';
     echo $video_link;
+    echo '</textarea>';
+
+    echo '<label id="video_thumbnail">Video Preview Image (URL)</label><textarea id="video_thumbnail" name="video_thumb" style="height:100px; width:100%;">';
+    echo $video_thumbnail;
     echo '</textarea>';
   }
   
   function save_video(){
   	global $post;
   	update_post_meta($post->ID, "mst_video_embed", $_POST["video_embed"]);
+    update_post_meta($post->ID, "mst_video_thumb", $_POST["video_thumb"]);
   }
 
 
