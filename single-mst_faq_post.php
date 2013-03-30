@@ -11,6 +11,7 @@ get_header();
       	<div class="post-entry">
       	   
       		<?php the_content(); ?>
+          <small>Last updated on <time datetime="<?php the_modified_time('Y-m-d'); ?>"><?php the_modified_time('F Y'); ?></time></small>
       	</div>
       </div>
     <?php comments_template(); ?>
