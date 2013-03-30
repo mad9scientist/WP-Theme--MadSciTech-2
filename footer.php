@@ -71,8 +71,6 @@ wp_footer();
 if (is_page_template('home-page.php')) { 
 ?>
 
-<script type="text/javascript" src="<?php echo $themeDir; ?>/js/jquery.easing.1.2.min.js"></script>
-<script type="text/javascript" src="<?php echo $themeDir; ?>/js/jquery.anythingslider.min.js"></script>
 <script type="text/javascript" src="<?php echo $themeDir; ?>/js/slider.min.js"></script>
 <!--[if lt IE 7]>
   <script type='text/javascript'>  
