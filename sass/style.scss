@@ -58,7 +58,7 @@ a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 
 #nav{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAtCAAAAACPYsSJAAAAJUlEQVQ4y2P5z4ANsDBgFx4A1bQ0ZADMHqouGRm+HPSpioY5DQBZ9iKT6wdi6gAAAABJRU5ErkJggg==); border-left:medium none; border-right:medium none; border-top:1px solid #ddd; display:block; font-size:18px; font-weight:bold; height:45px; line-height:45px; margin:auto; padding:0 60px; position:relative; width:906px; z-index:10; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px;}
 #nav_mainlinks{float:left;}
 #nav_secondarylinks{float:right; display:none;}
-#nav li{display:inline;padding-right:0.6em; }
+#nav li{display:inline;margin:0 0.25em; }
 #content{background:#fff; position:relative; z-index:3; width:951px; margin:auto; min-height:650px;}
 #articles{width:620px; float:left; padding:5px 0 0 0; margin:15px 0 25px 5px; border:1px solid #ddd; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
 #FMA{height:226px; margin-top:10px; margin-bottom:-27px; padding-bottom:18px; border-bottom:2px dotted #bbb;}
@@ -122,7 +122,20 @@ a:visited {	color:#00a7ff;}
 #nav a{	color:#0066CC;	text-decoration:none;}
 #nav a:hover, a:active{color:#0099FF; text-decoration:none;}
 /* Active Section Highlighter */
-.current_page_ancestor, .current_page_item, .current_page_parent{position:relative; top:0px; padding:7px 0 28px 10px; background:#fff; border-color:#bbb; border-style: solid solid none; border-width:1px 1px medium; -webkit-border-top-left-radius: 8px; -webkit-border-top-right-radius: 8px; -moz-border-radius-topleft: 8px; -moz-border-radius-topright: 8px; border-top-left-radius: 8px; border-top-right-radius: 8px;}
+ .current_page_ancestor,  .current_page_item,  .current_page_parent{
+	position:relative; 
+	top:0px; 
+	padding:0.4em 0.5em 28px; 
+	background:#fff; 
+	border-color:#bbb; 
+	border-style: solid solid none; 
+	border-width:1px 1px medium; 
+	-webkit-border-top-left-radius: 8px; 
+	-webkit-border-top-right-radius: 8px; 
+	-moz-border-radius-topleft: 8px; 
+	-moz-border-radius-topright: 8px; 
+	border-top-left-radius: 8px; 
+	border-top-right-radius: 8px;}
 /* Typograph */
 p {font-size:13px;}
 h1, h2, h3, h4, h5, h6{	font-family:"Helvetica Neue", "Helvetica Std", Helvetica, Arial, San-serif; font-weight:normal;}

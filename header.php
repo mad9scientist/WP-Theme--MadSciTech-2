@@ -50,8 +50,8 @@
   <div id="header-content">
     <div id="header-sitecontrols">
       <?php #Welcome, <a href="">Sign In</a> | <a href="">Help</a> 
-      #<div class="hdr-rss"><a class="hdr-rss" href="<?php bloginfo('rss2_url'); ">Subscribe</a></div> ?>
-       <div id="site-search">
+      #<div class="hdr-rss"><a class="hdr-rss" href="<?php bloginfo('rss2_url'); ">Subscribe</a></div> 
+       /*<div id="site-search">
         <div id="site-search-field">
           <form action="http://madscitech.com/search/" id="cse-search-box">
             <div>
@@ -63,7 +63,7 @@
           </form>
         </div>
       </div> 
-      <div class="clear"></div>
+      <div class="clear"></div> */?>
     </div>  
     
     <div class="floatRight socialIcons">
