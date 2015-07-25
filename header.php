@@ -16,7 +16,7 @@
 <?php wp_title('&laquo;', true, 'right'); ?>
 <?php #bloginfo('name'); ?>
 </title>
-<link rel="shortcut icon" type="image/x-icon" href="<?php echo $themeDir; ?>/images/favicon.ico" />
+<?php include('parts/favicon.php'); ?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="<?php echo $themeStyle;?>/css/ie.css" />
