@@ -24,7 +24,6 @@
             <div class="footer-col-header">Community</div>
             <div class="footer-col-text">
               <ul>
-                <?php //<li><a href="/forums/">Support Forums</a></li> ?>
                 <li><a href="/faqs/">FAQs</a></li>
               </ul>
             </div>
@@ -39,20 +38,7 @@
               </ul>
             </div>
           </div>
-          <?php /*
-          <!-- <div class="footer-col">
-            <div class="footer-col-header">Services</div>
-            <div class="footer-col-text">
-              <ul>
-                <li><a href="/services/computer/">Computer Services</a></li>
-                <li><a href="/services/networking/">Network Services</a></li>
-                <li><a href="/services/web/">Web Services</a></li>
-                <li><a href="/services/b2b/">Business Solutions</a></li>
-              </ul>
-            </div>
-          </div> -->
-           */
-          ?>
+          
           <div class="clear"></div>
         </div>
         <div id="copyleft">
