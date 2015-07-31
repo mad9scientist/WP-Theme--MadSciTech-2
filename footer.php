@@ -24,7 +24,7 @@
             <div class="footer-col-header">Community</div>
             <div class="footer-col-text">
               <ul>
-                <li><a href="/forums/">Support Forums</a></li>
+                <?php //<li><a href="/forums/">Support Forums</a></li> ?>
                 <li><a href="/faqs/">FAQs</a></li>
               </ul>
             </div>
@@ -39,6 +39,7 @@
               </ul>
             </div>
           </div>
+          <?php /*
           <!-- <div class="footer-col">
             <div class="footer-col-header">Services</div>
             <div class="footer-col-text">
@@ -50,6 +51,8 @@
               </ul>
             </div>
           </div> -->
+           */
+          ?>
           <div class="clear"></div>
         </div>
         <div id="copyleft">
@@ -104,7 +107,9 @@ if (is_page_template('home-page.php')) {
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="//services.madscitech.com/analytics/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<noscript>
+    <img src="//services.madscitech.com/analytics/piwik.php?idsite=1" style="border:0;" alt="" />
+</noscript>
 <!-- End Piwik Code -->
 
 </body>
