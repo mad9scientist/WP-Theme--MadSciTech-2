@@ -9,7 +9,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head profile="http://gmpg.org/xfn/11">
 <link rel="dns-prefetch" href="//ajax.googleapis.com">
-<link rel="dns-prefetch" href="//services.madscitech.com">
 <link rel="dns-prefetch" href="//madscitech.staticookie.com">
 <link rel="dns-prefetch" href="//google-analytics.com">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
