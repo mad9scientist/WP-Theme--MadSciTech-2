@@ -32,7 +32,6 @@
             <div class="footer-col-header">Support Option</div>
             <div class="footer-col-text">
               <ul>
-                <!-- <li><a href="http://ticket.madscitech.com">Support Ticket System</a></li> -->
                 <li><a href="/services/onpremise/">On Premise Support</a></li>
                 <li><a href="/services/remote/">Remote Support</a></li>                
               </ul>
