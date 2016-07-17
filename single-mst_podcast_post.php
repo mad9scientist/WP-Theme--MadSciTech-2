@@ -14,7 +14,7 @@ get_header();
       	  <?php 
           // If $video_embed does not include <iframe assume YouTube Video ID
           if(!preg_match("/<iframe/", $video_embed)){ ?>
-            <iframe width="100%" height="400" src="http://www.youtube.com/embed/<?php echo $video_embed; ?>" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="400" src="//www.youtube.com/embed/<?php echo $video_embed; ?>" frameborder="0" allowfullscreen></iframe>
           <?php } else { 
             // Else post as normal video embed code
             echo $video_embed;
