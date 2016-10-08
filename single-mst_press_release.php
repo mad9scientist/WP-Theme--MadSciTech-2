@@ -211,14 +211,14 @@ $custom = get_post_custom($post->ID);
       c/o Press Relations <br>
       P.O. Box 3139 <br>
       Quincy, Illinois 62305-3139 <br>
-      Press@MadSciTech.com <br>
+      Press (at) MadSciTech (.) com <br>
       <a href="https://MadSciTech.com">MadSciTech.com</a></p>
 
     <p>
       <small>NOTICE: This document may include predictions, estimates or other information that might be considered forward-looking. While these forward-looking statements represent our current judgment on what the future holds, they are subject to risks and uncertainties that could cause actual results to differ materially. You are cautioned not to place undue reliance on these forward-looking statements, which reflect our opinions only as of the date of this presentation. Please keep in mind that we are not obligating ourselves to revise or publicly release the results of any revision to these forward-looking statements in light of new information or future events.</small>
     </p>
 
-    <p>&copy; 2001-<?=date('Y')?> Mad Scientist Techologies.</p>
+    <p>&copy; 2001&ndash;<?=date('Y')?> Mad Scientist Techologies.</p>
   </article>
   <!-- Google Analytics -->
   <script type="text/javascript">
