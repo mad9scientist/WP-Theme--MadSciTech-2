@@ -11,7 +11,7 @@ get_header();
 	  color: #0f0f0f;
 	}
 	.press-releases-container .press-release article {
-		background: #eee;
+		background: #f3f3f3;
 		padding: 0.75em;
 		margin: 1em 0 2em;
 		box-shadow: 1px 1px 2px #888;
