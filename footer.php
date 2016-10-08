@@ -17,6 +17,7 @@
               <ul>
                 <li><a href="/about/">About Us</a></li>
                 <li><a href="/about/contact/">Contact Us</a></li>
+                <li><a href="/about/press-release/">Press Releases</a></li>
               </ul>
             </div>
           </div>
