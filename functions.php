@@ -74,6 +74,30 @@ function excludeCatsfromFeed($query) {
 }
 add_filter('pre_get_posts','excludeCatsfromFeed');
 
+// Custom Post Types - Press Releases
+
+  add_action('init', 'press_release_register');
+
+  function press_release_register() {
+      $args = array(
+          'label'           =>    'Press Releases',
+          'singular_label'  =>    'Press Release',
+          'public'          =>    true,
+          'show_ui'         =>    true,
+          'show_in_menu'    =>    true,
+          'menu_position'   =>    55,
+          'menu_icon'       =>    '/mst/wp-content/themes/MadSciTech-2/images/press.png',
+          'capability_type' =>    'post',
+          'hierarchical'    =>    false,
+          'rewrite'         =>    array('slug' => 'about/press-release', 'with_front' => false), 
+          'has_archive'     =>    true,
+          'supports'        =>    array('title', 'editor')
+        );
+
+      register_post_type( 'mst_press_release' , $args );
+  }
+
+
 // Custom Post Types - FAQs
 
 	add_action('init', 'faq_register');
