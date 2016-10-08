@@ -86,7 +86,7 @@ add_filter('pre_get_posts','excludeCatsfromFeed');
           'show_ui'         =>    true,
           'show_in_menu'    =>    true,
           'menu_position'   =>    55,
-          'menu_icon'       =>    '/mst/wp-content/themes/MadSciTech-2/images/press.png',
+          'menu_icon'       =>    '/mst/wp-content/themes/MadSciTech-2g/images/press.png',
           'capability_type' =>    'post',
           'hierarchical'    =>    false,
           'rewrite'         =>    array('slug' => 'about/press-release', 'with_front' => false), 
