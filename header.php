@@ -20,9 +20,6 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="<?php echo $themeStyle;?>/css/ie.css" />
-    <?php/* print '<script type="text/javascript" src="';
-    echo $themeDir . '/js/curvycorners.2.1.min.js"></script>
-    <script type="text/javascript">var curvyCornersVerbose = false;</script>';*/  ?>  
 <![endif]-->
 <!-- Forgive me, that I have sinned, with inline styles for Stupid Internet Explore!!! -->
 <!--[if IE 7]>
