@@ -8,7 +8,7 @@ Description: A theme for MadSciTech.com
 Created: November-December 2009 (Updated March 2013) Converted to SASS
 License: BSD & Mad Scientist Technologies Trademark Policy
 License URI: http://madscitech.com/about/trademarks/
-Version: 1.3.3g
+Version: 1.3.4g
 */
 
 /*** Need some responsive design - yes ***/
@@ -94,9 +94,9 @@ a.hdr-rss{background:url(images/core-img.png) no-repeat 58px -293px; padding: 0 
  #support-opt{width:280px; overflow:auto;}
  #support-opt .onpremise, #support-opt .remote, #support-opt .online{display:block; width:80px; height:80px; margin:7px 0 7px 10px; float:left;   background:#ccc;} /* Kill background*/
  /* Icons */
- #support-opt .onpremise{background:url("images/core-img.png") no-repeat 2px -100px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
- #support-opt .remote{background:url("images/core-img.png") no-repeat -82px -99px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
- #support-opt .online{background:url("images/core-img.png") no-repeat -173px -93px; border-radius:5px; box-shadow:0 0 1px 0 #369;}
+ #support-opt .onpremise{background:url("images/core-img.png") no-repeat 2px -100px; border-radius:5px; }
+ #support-opt .remote{background:url("images/core-img.png") no-repeat -82px -99px; border-radius:5px; }
+ #support-opt .online{background:url("images/core-img.png") no-repeat -173px -93px; border-radius:5px; }
  .support_opt_selected,#support-opt .onpremise:focus, #support-opt .onpremise:active, #support-opt .remote:focus, #support-opt .remote:active, #support-opt .online:focus, #support-opt .online:active{-webkit-box-shadow:0 0 4px 2px #369 !important; -moz-box-shadow:0 0 4px 2px #369 !important; box-shadow:0 0 4px 2px #369 !important;}
  /* Info Box */
  #onpremise-info, #remote-info, #online-info{padding:90px 0 0; margin:5px 5px 0 10px; height:100px; display:none;} 

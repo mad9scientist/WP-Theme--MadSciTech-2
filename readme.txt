@@ -1,5 +1,5 @@
 # Mad Scientist Technologies
-Version 1.3.3 (Git Edition)
+Version 1.3.4 (Git Edition)
 
 ## Introduction
 This theme was designed for use only by Mad Scientist Technologies / MadSciTech.com, any other use is strictly prohibited.
@@ -15,4 +15,4 @@ Please note, if you have the 5G or Higher WordPress .htaccess Blacklist installe
 
 
 
-Last Update: Oct 2012
+Last Update: Nov 2018
