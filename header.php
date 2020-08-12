@@ -64,7 +64,7 @@
     </div>  
     
     <div class="floatRight socialIcons">
-      <a href="/google+/" titile="Join us on Google+" class="hdrSocialIco hdrIcoGoogle">Join us on Google+</a>
+      <!--<a href="/google+/" titile="Join us on Google+" class="hdrSocialIco hdrIcoGoogle">Join us on Google+</a>-->
 	    <a href="/facebook/" title="Like us on Facebook" class="hdrSocialIco hdrIcoFB">Like us on Facebook</a>
 	    <a href="/twitter/" title="Follow us on Twitter" class="hdrSocialIco hdrIcoTwitter">Follow us on Twitter</a>
     </div>
