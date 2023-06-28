@@ -69,7 +69,17 @@ if (is_page_template('home-page.php')) {
 <?php } ?>
 <script type='text/javascript' src='<?php echo $themeDir; ?>/js/madscitech.js'></script>
 
-<!-- Google Analytics -->
+<!-- Google Analytics 4 (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9NKT1MB65"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G9NKT1MB65');
+</script>
+
+<!-- Google Analytics Removing Late July 2023 -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-11768734-1']);
