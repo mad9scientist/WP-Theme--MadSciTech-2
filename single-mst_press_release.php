@@ -203,7 +203,7 @@ $custom = get_post_custom($post->ID);
     <hr>
 
     <p><strong>About Mad Scientist Technologies</strong></p>
-    <p>Founded in 2001, Mad Scientist Technologies is privately held Information Technology (IT) Services and Consulting provider, serving West Central Illinois and North East Missouri. Mad Scientist Technologies mission is to simplify technology so everyone can benefit from our glorious technological advancements in the computer science field. </p>
+    <p>Established in 2001, Mad Scientist Technologies is a privately held IT services and consulting provider, serving West Central Illinois and Northeast Missouri. Our mission is to simplify technology so that everyone can benefit from the advancements in the field of computer science.</p>
 
     <p><strong>Contact</strong></p>
 
