@@ -79,17 +79,6 @@ if (is_page_template('home-page.php')) {
   gtag('config', 'G-G9NKT1MB65');
 </script>
 
-<!-- Google Analytics Removing Late July 2023 -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-11768734-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();</script>
-
 </body>
 </html>
 <!-- <?php echo $wpdb->num_queries; ?> <?php echo 'queries'; ?>. <?php timer_stop(1); ?> <?php echo "seconds. Theme: $themeDir"; ?> -->
