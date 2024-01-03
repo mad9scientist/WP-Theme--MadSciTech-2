@@ -42,7 +42,7 @@
           <div class="clear"></div>
         </div>
         <div id="copyleft">
-          &copy; <?php echo '2001 - ' . date('Y'); ?> Mad Scientist Technologies, Inc. Some rights reserved. 
+          &copy; <?php echo '2001 - ' . date('Y'); ?> Mad Scientist Technologies LLC. Some rights reserved. 
           <a href="/about/terms/">Terms &amp; Conditions</a> &bull; 
           <a href="/about/privacy/">Privacy</a> &bull; 
           <a href="/about/trademarks/">Trademarks</a>
