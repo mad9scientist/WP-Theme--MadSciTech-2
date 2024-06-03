@@ -234,3 +234,18 @@ function remove_the_wpautop_function() {
 }
 
 //add_action( 'after_setup_theme', 'remove_the_wpautop_function' );
+//function no_ptags_shortcode($atts, $content = null){
+//	remove_filter('the_content', 'wpautop');
+//	return $content;
+//}
+//add_shortcode('nops','no_ptags_shortcode');
+
+// Disable Auto P Tags for Post
+// 1159 - Recommendations
+function remove_ptags_from_post($content){
+	if (is_page('1159')){
+		$content = str_replace(['<p>','</p>'], '', $content);
+	}
+	return $content;
+}
+add_filter('the_content', 'remove_ptags_from_post', 20);
