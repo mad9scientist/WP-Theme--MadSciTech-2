@@ -226,4 +226,11 @@ function mytheme_admin_bar_render() {
 }
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
+// STOP Putting P tags in things
 
+function remove_the_wpautop_function() {
+    remove_filter( 'the_content', 'wpautop' );
+    remove_filter( 'the_excerpt', 'wpautop' );
+}
+
+//add_action( 'after_setup_theme', 'remove_the_wpautop_function' );
