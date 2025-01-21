@@ -24,9 +24,9 @@ get_header(); ?>
 	</div>
 
 <?php else : ?>
-	<h2>No posts found. Try a different search?</h2>
-        <div id="search-field-page">
-		<?php get_search_form(); ?>
+	<div class="post-entry">
+		<h2>No posts found. Try a different search?</h2>
+		<p>Please Search Again</p>
 	</div>
 <?php endif; ?>
 
