@@ -13,7 +13,10 @@ get_header(); ?>
 					<?php the_content('<p>Read the rest of this page &raquo;</p>'); ?>
                     <?php wp_link_pages(array('before' => '<p>Pages: ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
                 </div>
-                <!-- <?php edit_post_link('? Edit this entry.', '<p>', '</p>'); ?> -->
+                <?php 
+			// Edit Page Link
+			//edit_post_link('? Edit this entry.', '<p>', '</p>'); 
+		?>
 			<?php comments_template(); ?>
 		</div>
 		<?php endwhile; endif; ?>
