@@ -189,7 +189,7 @@ $custom = get_post_custom($post->ID);
   </header>
 
   <article>
-    <img src="//madscitech.com/apps/public/img/MST-Logo-Med_Nontransparent.png" class="printerlogo" height="90" width="302.417">
+    <img src="//madscitech.com/apps/public/img/MST-Logo-Med_Nontransparent.png" class="printerlogo" height="90" width="302">
     <h1>
       <a href="/">Mad Scientist Technologies</a>
       <span>Press Release</span>
