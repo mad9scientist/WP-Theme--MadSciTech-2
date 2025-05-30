@@ -27,7 +27,7 @@ function rm_l10n(){
 }
 add_action('init','rm_l10n');
 // No Announcing of for Fail Login
-add_filter('login_errors',create_function('$a', "return null;"));
+//add_filter('login_errors',create_function('$a', "return null;"));
 // Kill Version Number
 function killVersion() { return ''; }
 add_filter('the_generator','killVersion');
