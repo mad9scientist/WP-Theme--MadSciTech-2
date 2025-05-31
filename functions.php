@@ -249,3 +249,12 @@ function remove_ptags_from_post($content){
 	return $content;
 }
 add_filter('the_content', 'remove_ptags_from_post', 20);
+
+# Remove Dev/MST HQ IP
+add_filter(
+	'jetpack_stats_excluded_ips',
+	function ( $excluded_ips ) {
+		$excluded_ips[] = '206.71.195.217';
+		return $excluded_ips;
+	}
+);
