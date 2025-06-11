@@ -73,15 +73,15 @@
 			<input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="26" tabindex="3" <?php if ($req) echo "aria-required='true'"; ?> placeholder="We will not spam you"/>
 			 <?php //if ($req) echo "(required)"; ?>
 		</div>
+<?php /*
 		<div class="labelgroups">
 			<label for="url">Website <small>(Optional)</small></label>
 			<input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="26" tabindex="4" placeholder="(Optional)" />
 		</div>
 
+		<p><strong>XHTML:</strong> You can use these tags: <code><?=allowed_tags(); ?></code></p>
+ */ ?>
 		<?php endif; ?>
-
-		<!--<p><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></p>-->
-
 		<div class="clear"></div>
 		<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment"  />
 		<?php comment_id_fields(); ?>
