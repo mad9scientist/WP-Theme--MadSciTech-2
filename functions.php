@@ -3,6 +3,8 @@ add_theme_support( 'automatic-feed-links' );
 /* Sidebar Widget */
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
+		'name' => 'Sidebar',
+		'id' => 'sidebar-1',
 		'before_widget' => '<div class="aside-item">',
 		'after_widget' => '</div></div>',
 		'before_title' => '<div class="aside-hdr"><h3>',
