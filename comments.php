@@ -47,7 +47,11 @@
 
 	<h3><?php comment_form_title( 'Leave a Comment', 'Leave a Comment to %s' ); ?></h3>
 
-	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
+	<p class="cancel-comment-reply" style="padding:5px 0;">
+		<?php cancel_comment_reply_link(); ?>
+	</p>
+
+	<p style="padding:0;font-style:italic;">Kindly comment in English only. Spam will be removed.</p>
 
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 	<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
@@ -55,7 +59,7 @@
 
 	<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform"><div id="respond-padding">
 		
-		<textarea name="comment" id="comment" rows="10" tabindex="1"></textarea>
+		<textarea name="comment" id="comment" rows="10" tabindex="1" autocomplete="off" placeholder="Share your thoughts..."></textarea>
 
 		<?php if ( is_user_logged_in() ) : ?>
 
@@ -88,7 +92,7 @@
 		<?php do_action('comment_form', $post->ID); ?>
 
 	</div>
-    <div class="clear"></div>
+	<div class="clear"></div>
 	</form>
 
 	<?php endif; // If registration required and not logged in ?>
