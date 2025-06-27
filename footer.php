@@ -44,7 +44,7 @@
           <div class="clear"></div>
         </div>
         <div id="copyleft">
-          &copy; 2001&mdash;<?=date('Y') ?> Mad Scientist Technologies LLC. Some Rights Reserved. 
+          &copy; 2001&mdash;<?=date('Y') ?> Mad Scientist Technologies LLC. Some rights reserved. 
           <a href="/legal/">Legal</a> &bull; 
           <a href="/about/terms/">Terms</a> &bull; 
           <a href="/about/privacy/">Privacy</a> &bull; 
