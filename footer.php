@@ -26,6 +26,7 @@
             <div class="footer-col-text">
               <ul>
                 <li><a href="/faqs/">FAQs</a></li>
+                <li><a href="/videos/">Videos</a></li>
               </ul>
             </div>
           </div>
@@ -34,7 +35,8 @@
             <div class="footer-col-text">
               <ul>
                 <li><a href="/services/onpremise/">On Premise Support</a></li>
-                <li><a href="/services/remote/">Remote Support</a></li>                
+                <li><a href="/services/remote/">Remote Support</a></li> 
+                <li><a href="/about/contact/">IT Consulting</a></li>
               </ul>
             </div>
           </div>
@@ -42,10 +44,11 @@
           <div class="clear"></div>
         </div>
         <div id="copyleft">
-          &copy; <?php echo '2001 - ' . date('Y'); ?> Mad Scientist Technologies LLC. Some rights reserved. 
-          <a href="/about/terms/">Terms &amp; Conditions</a> &bull; 
+          &copy; 2001&mdash;<?=date('Y') ?> Mad Scientist Technologies LLC. Some Rights Reserved. 
+          <a href="/legal/">Legal</a> &bull; 
+          <a href="/about/terms/">Terms</a> &bull; 
           <a href="/about/privacy/">Privacy</a> &bull; 
-          <a href="/about/trademarks/">Trademarks</a>
+          <a href="/about/trademarks/">Trademarks</a> 
         </div>
       </div>
       <div class="clear"></div>
@@ -56,18 +59,18 @@
 <!-- Scripts -->
 <?php
 wp_footer();
- 
+
 if (is_page_template('home-page.php')) { 
 ?>
 
-<script type="text/javascript" src="<?php echo $themeDir; ?>/js/slider.min.js"></script>
+<script type="text/javascript" src="<?=$themeDir ?>/js/slider.min.js"></script>
 <!--[if lt IE 7]>
   <script type='text/javascript'>  
     $(".homepage-hdr:first-child").addClass("homepage-hdr-correction");  
   </script>    
 <![endif]-->
 <?php } ?>
-<script type='text/javascript' src='<?php echo $themeDir; ?>/js/madscitech.js'></script>
+<script type='text/javascript' src='<?=$themeDir ?>/js/madscitech.js'></script>
 
 <!-- Google Analytics 4 (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9NKT1MB65"></script>
@@ -75,7 +78,6 @@ if (is_page_template('home-page.php')) {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-G9NKT1MB65');
 </script>
 
