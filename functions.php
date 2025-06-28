@@ -270,12 +270,9 @@ function mst_password_form() {
     <style>.post-password-form .pwform{width:330px;margin:1em auto;}.post-password-form label{display:block;font-weight:600;border-bottom:1px solid #ccc;text-align:center;line-height:2em;}.post-password-form input[type=password]{padding:0.5em;width:220px;border-radius:3px;border:1px solid #09f;color:#555;}.post-password-form input[type=submit]{border:2px solid #09f;width:75px;background:#09f;padding:0.5em 1em;margin:1em 0 1em 1em;border-radius:3px;color:#fff;}</style>
     <form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" 
             method="post" 
-            class="post-password-form">
-        <p>' . __( "This page is password protected. To access this page, enter the password:" ) . '</p>
+            class="post-password-form"><p>' . __( "This page is password protected. To access this page, enter the password:" ) . '</p>
         <div class="pwform">
-            <label for="' . $label . '">' . __( "Password Required" ) . ' </label>
-            <input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" />
-            <input type="submit" name="Submit" value="' . esc_attr__( "Login" ) . '" />
+            <label for="' . $label . '">' . __( "Password Required" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /><input type="submit" name="Submit" value="' . esc_attr__( "Login" ) . '" />
         </div>
     </form>
     <script>
