@@ -69,12 +69,12 @@
 
 		<div class="labelgroups">
 			<label for="author">Name <span class="required">*</span></label>
-			<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="26" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> placeholder="What is your name?"/>
+			<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="26" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> placeholder="What is your name?" automcomplete="name nickname"/>
 			 <?php //if ($req) echo "(required)"; ?>
 		</div>
 		<div class="labelgroups">
 			<label for="email">Email <small>(will not be published)</small> <span class="required">*</span></label>
-			<input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="26" tabindex="3" <?php if ($req) echo "aria-required='true'"; ?> placeholder="We will not spam you"/>
+			<input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="26" tabindex="3" <?php if ($req) echo "aria-required='true'"; ?> placeholder="We will not spam you" autocomplete="email"/>
 			 <?php //if ($req) echo "(required)"; ?>
 		</div>
 <?php /*
