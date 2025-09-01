@@ -8,7 +8,7 @@
           <div id="support-opt">
             <a class="onpremise" href="/services/onpremise/" title="On Premise Support"></a>
             <a class="remote" href="/services/remote/" title="Remote Support"></a>
-            <a class="online" href="/forums/" title="Get Help Online"></a>
+            <a class="online" href="#gone" title="Get Help Online"></a>
             
             <div id="onpremise-info">
                 <h4>On Premise Support</h4>
