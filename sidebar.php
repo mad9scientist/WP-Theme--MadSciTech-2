@@ -25,7 +25,7 @@
             <div id="online-info">
             	<h4>Get Help Online</h4>
             	<p>Need help right now? Then the forums are the best place for immediate help.</p>
-            	<a href="/forums/">Forums</a>
+            	<!--<a href="#">Forums</a>-->
             </div>
           </div>  
         </div>
